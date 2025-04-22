@@ -30,4 +30,8 @@ bitcoin = gets.chomp
 bitcoin = bitcoin.to_f
 
 # 3. inspect the bitcoin_data hash
-# puts bitcoin_data
+bitcoin_rate = bitcoin_data["USD"]["last"]
+value = bitcoin_rate * bitcoin
+
+p "Bitcoin is valued at #{bitcoin_rate} USD."
+p "Your Bitcoin is worth #{value} USD."
