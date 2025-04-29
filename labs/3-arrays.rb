@@ -15,3 +15,18 @@
 # HINTS
 # Learn to read the documentation!
 # https://ruby-doc.org/core-2.7.0/Array.html
+
+ben_shopping_list = ["eggs", "oat milk", "beyond meat", "toilet paper"]
+brian_shopping_list = ["beer", "milk", "toilet paper", "bacon"]
+
+combined_list = ben_shopping_list + brian_shopping_list
+sorted_list = combined_list.sort
+sorted_unique_list = sorted_list.uniq
+
+puts "buy #{sorted_unique_list[0]}" # buy bacon
+puts "buy #{sorted_unique_list[1]}" # buy beer
+puts "buy #{sorted_unique_list[2]}" # buy beyond meat
+puts "buy #{sorted_unique_list[3]}" # buy eggs
+puts "buy #{sorted_unique_list[4]}" # buy milk
+puts "buy #{sorted_unique_list[5]}" # buy oat milk
+puts "buy #{sorted_unique_list[6]}" # buy toilet paper
